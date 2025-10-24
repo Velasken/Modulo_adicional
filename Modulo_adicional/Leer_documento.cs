@@ -53,10 +53,11 @@ namespace Modulo_adicional {
                     stopwatch.Stop();
 
                     TimeSpan elapsed = stopwatch.Elapsed;
+                    double microsegundos = (stopwatch.ElapsedTicks * 1_000_000.0) / Stopwatch.Frequency;
 
                     Console.WriteLine($"Numero de fichas cargadas: {contador}");
                     Console.WriteLine($"Numero de fichas descartadas: {descartes}");
-                    Console.WriteLine($"Tiempo de ejecución: {elapsed.TotalMilliseconds} ms");
+                    Console.WriteLine($"Tiempo de ejecución (en microsegundos): {microsegundos}");
                 }
             }
 
