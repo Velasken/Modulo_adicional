@@ -30,14 +30,14 @@ namespace Modulo_adicional {
                     {
                         string[] values = line.Split(separator);
 
-                        if (values[0] == null)
+                        if (values[0] == null || values[0] == "")
                         {
                             descartes++;
                             continue;
                         }
                         string Obra = values[0];
 
-                        if (values[1] == null)
+                        if (values[1] == null || values[1] == "")
                         {
                             descartes++;
                             continue;
