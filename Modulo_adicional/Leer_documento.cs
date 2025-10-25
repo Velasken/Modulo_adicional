@@ -26,6 +26,8 @@ namespace Modulo_adicional {
                     string line = "";
                     string separator = ";";
 
+                    sr.ReadLine(); //Quito la cabecera
+
                     while ((line = sr.ReadLine()) != null)
                     {
                         string[] values = line.Split(separator);
